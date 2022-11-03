@@ -6,12 +6,17 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class EtudiantService {
-  private readonly baseUrl:string=environment.url+"etudiant"
+  private readonly baseUrl:string=environment.url
 
   constructor(private httpClient:HttpClient) { }
 
   public getAllEtudiants()
   {
-    return this.httpClient.get(this.baseUrl);
+    return this.httpClient.get(this.baseUrl+"etudiant");
+  }
+  
+  public getAllEtudiantsOrdered()
+  {
+    return this.httpClient.get(this.baseUrl+"etudianttri");
   }
 }

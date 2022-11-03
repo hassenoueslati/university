@@ -8,15 +8,25 @@ import { EtudiantService } from '../services/etudiant.service';
 })
 export class EtudiantComponent implements OnInit {
   ListEtudiants : any[] = []
+  ListEtudiantsOrdered : any[] = []
 
   constructor(private etudiantService : EtudiantService) { }
 
   ngOnInit(): void {
     this.getAllEtudiants()
   }
+
   getAllEtudiants()
   {
     this.etudiantService.getAllEtudiants().subscribe((data:any)=>{
+      this.ListEtudiants =data.results.bindings
+    })
+  }
+
+
+  getAllEtudiantsOrdered()
+  {
+    this.etudiantService.getAllEtudiantsOrdered().subscribe((data:any)=>{
       this.ListEtudiants =data.results.bindings
     })
   }

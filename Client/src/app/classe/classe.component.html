@@ -1,0 +1,44 @@
+<div class="card">
+  <h5 class="card-header">Classe</h5>
+  <div style="display: flex; justify-content: flex-end;">
+    <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-outline-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Order By
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" (click)="getAllClasseTriNom()" href="javascript:void(0);">Nom</a></li>
+          <li><a class="dropdown-item" (click)=" getAllClasseTriNbEtud()" href="javascript:void(0);">Nombre Etudiants</a></li>
+          <li>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  <div class="table-responsive text-nowrap">
+    <table class="table table-striped mt-3">
+      <thead>
+        <tr>
+          <th>Nom</th>
+           <th>Specialite</th>
+          <th>Nombre Des Etudiants</th>
+        </tr>
+      </thead>
+      <tbody class="table-border-bottom-0" *ngFor="let classe of ListClasse">
+        <tr>
+          <td>
+            <i class="fab fa-bootstrap fa-lg text-primary me-3"></i>
+            <strong> {{ classe.Nom.value }}</strong>
+          </td>
+          <td>{{ classe.Specialite.value }}</td>
+          <td>{{ classe.NombreDesEtudiants.value }}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

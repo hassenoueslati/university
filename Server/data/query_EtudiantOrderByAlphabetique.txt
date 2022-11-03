@@ -1,0 +1,12 @@
+PREFIX ns: <http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?Etudiant ?Email ?Cin ?Age ?NomComplet
+WHERE {
+	?Etudiant rdf:type ns:Etudiant;
+	ns:Email ?Email;
+	ns:Cin ?Cin;
+	ns:Age ?Age;
+	ns:NomComplet ?NomComplet;
+	
+} ORDER BY ASC(?NomComplet)

@@ -1,0 +1,11 @@
+PREFIX ns: <http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?Classe ?Nom ?Specialite ?NombreDesEtudiants
+WHERE {
+	?Classe rdf:type ns:Classe;
+	ns:Nom ?Nom;
+	ns:Specialite ?Specialite;
+	ns:NombreDesEtudiants ?NombreDesEtudiants;
+	
+} ORDER BY DESC(?NombreDesEtudiants)

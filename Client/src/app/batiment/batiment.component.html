@@ -1,5 +1,24 @@
 <div class="card">
   <h5 class="card-header">Batiment</h5>
+  <!--<button  type="button" class="btn btn-secondary" (click)="getAllBatimentTri()">Tri By Etage</button>
+  <button (click)="getAllBatimentTri()">Tri By Etage</button>-->
+   <div style="display: flex; justify-content: flex-end; margin-right: 10px">
+     <div class="btn-group">
+       <button
+         type="button"
+         class="btn btn-outline-secondary dropdown-toggle"
+         data-bs-toggle="dropdown"
+         aria-expanded="false"
+       >
+         Tri
+       </button>
+       <ul class="dropdown-menu">
+         <li><a class="dropdown-item" (click)="getAllBatimentTri()">Tri By Etage</a></li>
+         <li><a class="dropdown-item" (click)="getAllBatimentTriByNom()">Tri By Nom</a></li>
+       </ul>
+     </div>
+   </div>
+
   <div class="table-responsive text-nowrap">
     <table class="table table-striped mt-3">
       <thead>

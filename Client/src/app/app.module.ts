@@ -11,6 +11,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { BatimentComponent } from './batiment/batiment.component';
 import { ClasseComponent } from './classe/classe.component';
+import { EtudiantComponent } from './etudiant/etudiant.component';
+import { SalleComponent } from './salle/salle.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ClasseComponent } from './classe/classe.component';
     NavbarComponent,
     FooterComponent,
     BatimentComponent,
-    ClasseComponent
+    ClasseComponent,
+    EtudiantComponent,
+    SalleComponent
   ],
   imports: [
     BrowserModule,

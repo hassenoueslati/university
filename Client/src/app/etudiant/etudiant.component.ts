@@ -24,9 +24,17 @@ export class EtudiantComponent implements OnInit {
   }
 
 
-  getAllEtudiantsOrdered()
+  getAllEtudiantsOrderedByAge()
   {
-    this.etudiantService.getAllEtudiantsOrdered().subscribe((data:any)=>{
+    this.etudiantService.getAllEtudiantsOrderedByAge().subscribe((data:any)=>{
+      this.ListEtudiants =data.results.bindings
+    })
+  }
+
+
+  getAllEtudiantsOrderedByName()
+  {
+    this.etudiantService.getAllEtudiantsOrderedByName().subscribe((data:any)=>{
       this.ListEtudiants =data.results.bindings
     })
   }

@@ -15,8 +15,13 @@ export class EtudiantService {
     return this.httpClient.get(this.baseUrl+"etudiant");
   }
   
-  public getAllEtudiantsOrdered()
+  public getAllEtudiantsOrderedByAge()
   {
     return this.httpClient.get(this.baseUrl+"etudianttri");
+  }
+  
+  public getAllEtudiantsOrderedByName()
+  {
+    return this.httpClient.get(this.baseUrl+"etudianttrinomcomplet");
   }
 }

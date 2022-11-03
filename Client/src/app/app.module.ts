@@ -13,6 +13,8 @@ import { BatimentComponent } from './batiment/batiment.component';
 import { ClasseComponent } from './classe/classe.component';
 import { EtudiantComponent } from './etudiant/etudiant.component';
 import { SalleComponent } from './salle/salle.component';
+import {ClubComponent} from "./club/club.component";
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SalleComponent } from './salle/salle.component';
     BatimentComponent,
     ClasseComponent,
     EtudiantComponent,
-    SalleComponent
+    SalleComponent,
+    ClubComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

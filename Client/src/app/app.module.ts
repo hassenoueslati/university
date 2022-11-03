@@ -10,8 +10,9 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { BatimentComponent } from './batiment/batiment.component';
+import { ClasseComponent } from './classe/classe.component';
+import { EtudiantComponent } from './etudiant/etudiant.component';
 import { SalleComponent } from './salle/salle.component';
-
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { SalleComponent } from './salle/salle.component';
     NavbarComponent,
     FooterComponent,
     BatimentComponent,
+    ClasseComponent,
+    EtudiantComponent,
     SalleComponent
-
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,48 @@
+<div class="card">
+    <h5 class="card-header">Etudiant</h5>
+<div style="display: flex; justify-content: flex-end;">
+    <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-outline-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Order By
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" (click)="getAllEtudiantsOrderedByAge()" href="javascript:void(0);">Age</a></li>
+          <li><a class="dropdown-item" (click)="getAllEtudiantsOrderedByName()" href="javascript:void(0);">Name</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0);">Something else here</a></li>
+          <li>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="table-responsive text-nowrap">
+      <table class="table table-striped mt-3">
+        <thead>
+        <tr>
+          <th>NomComplet</th>
+          <th>Email</th>
+          <th>Cin</th>
+          <th>Age</th>
+         
+        </tr>
+        </thead>
+        <tbody class="table-border-bottom-0" *ngFor="let etudiant of ListEtudiants">
+        <tr>
+            <td>{{etudiant.NomComplet.value}}</td>
+
+          <td>
+            <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong> {{etudiant.Email.value}}</strong>
+          </td>
+          <td>{{etudiant.Cin.value}}</td>
+          <td>{{etudiant.Age.value}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

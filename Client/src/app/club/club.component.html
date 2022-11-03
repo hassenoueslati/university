@@ -1,0 +1,42 @@
+<div class="card">
+  <h5 class="card-header">Club</h5>
+  <div style="display: flex; justify-content: flex-end;">
+    <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-outline-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Order By
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" (click)="getAllClubsOrderedByNb()" href="javascript:void(0);">Nb Membres</a></li>
+          <li><a class="dropdown-item" (click)="getAllClubsOrderedByNom()" href="javascript:void(0);">Noms</a></li>
+          <li>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  <div class="table-responsive text-nowrap">
+    <table class="table table-striped mt-3">
+      <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Domaine</th>
+        <th>Nombre Des Membres</th>
+      </tr>
+      </thead>
+      <tbody class="table-border-bottom-0" *ngFor="let club of ListClub">
+      <tr>
+        <td>
+          <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong> {{club.Nom.value}}</strong>
+        </td>
+        <td>{{club.Domaine.value}}</td>
+        <td>{{club.NombreDesMembres.value}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

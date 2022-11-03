@@ -59,6 +59,31 @@ public class RestApi {
         }
     }
     
+    @GetMapping("/salle")
+    @CrossOrigin(origins = "http://localhost:4200")
+    public String afficherSalle() {
+        String NS = "";
+        // lire le model a partir d'une ontologie
+        if (model != null) {
+            // lire le Namespace de l�ontologie
+            NS = model.getNsPrefixURI("");
+
+            // apply our rules on the owlInferencedModel
+            Model inferedModel = JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+
+            // query on the model after inference
+            OutputStream res =  JenaEngine.executeQueryFile(inferedModel, "data/query_Salle.txt");
+            System.out.println(res);
+            return res.toString();
+
+
+        } else {
+            return ("Error when reading model from ontology");
+        }
+    }
+    
+    
+    
     
     
     

@@ -10,6 +10,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { BatimentComponent } from './batiment/batiment.component';
+import { SalleComponent } from './salle/salle.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { BatimentComponent } from './batiment/batiment.component';
     SidebarComponent,
     NavbarComponent,
     FooterComponent,
-    BatimentComponent
+    BatimentComponent,
+    SalleComponent
+
   ],
   imports: [
     BrowserModule,

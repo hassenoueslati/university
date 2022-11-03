@@ -1,0 +1,11 @@
+PREFIX ns: <http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?Salle ?Capacite ?Type ?Nom
+WHERE {
+	?Salle rdf:type ns:Salle;
+	ns:Capacite ?Capacite;
+	ns:Type ?Type;
+	ns:Nom ?Nom;
+	
+}

@@ -1,0 +1,23 @@
+<div class="card">
+  <h5 class="card-header">Salle</h5>
+  <div class="table-responsive text-nowrap">
+    <table class="table table-striped mt-3">
+      <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Type</th>
+        <th>Capacite</th>
+      </tr>
+      </thead>
+      <tbody class="table-border-bottom-0" *ngFor="let salle of ListSalle">
+      <tr>
+        <td>
+          <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong> {{salle.Nom.value}}</strong>
+        </td>
+        <td>{{salle.Type.value}}</td>
+        <td>{{salle.Capacite.value}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

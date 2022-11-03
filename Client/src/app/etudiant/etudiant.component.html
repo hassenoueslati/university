@@ -1,0 +1,26 @@
+<div class="card">
+    <h5 class="card-header">Etudiant</h5>
+    <div class="table-responsive text-nowrap">
+      <table class="table table-striped mt-3">
+        <thead>
+        <tr>
+          <th>Email</th>
+          <th>Cin</th>
+          <th>Age</th>
+          <th>NomComplet</th>
+        </tr>
+        </thead>
+        <tbody class="table-border-bottom-0" *ngFor="let etudiant of ListEtudiants">
+        <tr>
+          <td>
+            <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong> {{etudiant.Email.value}}</strong>
+          </td>
+          <td>{{etudiant.Cin.value}}</td>
+          <td>{{etudiant.Age.value}}</td>
+          <td>{{etudiant.NomComplet.value}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

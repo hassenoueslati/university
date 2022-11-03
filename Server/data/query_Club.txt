@@ -1,0 +1,11 @@
+PREFIX ns: <http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?Club ?Nom ?Domaine ?NombreDesMembres
+WHERE {
+	?Club rdf:type ns:Club;
+	ns:Nom ?Nom;
+	ns:Domaine ?Domaine;
+	ns:NombreDesMembres ?NombreDesMembres;
+	
+}

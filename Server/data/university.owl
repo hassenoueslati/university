@@ -1,0 +1,621 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#"
+     xml:base="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-15="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estChefDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estChefDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#ChefDepartement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Departement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEleveDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEleveDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEnseignantDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEnseignantDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estProfesseurDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEnseignanteDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEnseignanteDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estProfesseurDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEtudiantDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEtudiantDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEleveDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Homme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEtudianteDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEtudianteDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estEleveDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Femme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estGardienDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estGardienDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Gardien"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Batiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estLocaliseDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estLocaliseDans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Club"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Salle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Batiment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estMembreDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estMembreDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Club"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estProfesseurDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#estProfesseurDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Professeur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Batiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Personnel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Capacite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Capacite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Salle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Cin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Cin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Domaine -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Domaine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Club"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Personnel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Nom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Batiment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Club"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Salle"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Universite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#NomComplet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#NomComplet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Personnel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#NombreDesEtages -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#NombreDesEtages">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Batiment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#NombreDesEtudiants -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#NombreDesEtudiants">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#NombreDesMembres -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#NombreDesMembres">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Club"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Specialite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Specialite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Salle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Batiment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Batiment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Business -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Departement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#ChefDepartement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#ChefDepartement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Personnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Club -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Club"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Departement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Departement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#DirecteurDesEtudes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#DirecteurDesEtudes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Personnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#DirecteurGeneral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#DirecteurGeneral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Personnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#EM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#EM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Departement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Femme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Femme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Professeur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#GC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#GC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Departement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Gardien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Gardien">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Personnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Homme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Homme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Professeur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Personnel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Professeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Professeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Personnel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Salle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Salle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#TIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#TIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Departement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Universite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Universite"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Batiment"/>
+        <Address>ghazela</Address>
+        <Nom>A</Nom>
+        <NombreDesEtages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</NombreDesEtages>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#A12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#A12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Salle"/>
+        <Capacite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</Capacite>
+        <Nom>A12</Nom>
+        <Type>Amphi</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Batiment"/>
+        <Address>ghazela</Address>
+        <Nom>B</Nom>
+        <NombreDesEtages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NombreDesEtages>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#B03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#B03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Salle"/>
+        <Capacite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</Capacite>
+        <Nom>B03</Nom>
+        <Type>Amphi</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Badiaa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Badiaa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Professeur"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</Age>
+        <Cin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12364646</Cin>
+        <Email>badiaa@esprit.tn</Email>
+        <NomComplet>Badiaa bouhdid</NomComplet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Batiment"/>
+        <Address>cherguia</Address>
+        <Nom>C</Nom>
+        <NombreDesEtages rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</NombreDesEtages>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#C01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#C01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Salle"/>
+        <Capacite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</Capacite>
+        <Nom>C01</Nom>
+        <Type>Labo</Type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Enactus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Enactus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Club"/>
+        <Domaine>Entrepreneuriat</Domaine>
+        <Nom>Enactus</Nom>
+        <NombreDesMembres rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</NombreDesMembres>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Hassen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Hassen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</Age>
+        <Cin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">09946546</Cin>
+        <Email>Hassen@esprit.tn</Email>
+        <NomComplet>Hassen Oueslati</NomComplet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#IEEE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#IEEE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Club"/>
+        <Domaine>informatique</Domaine>
+        <Nom>IEEE</Nom>
+        <NombreDesMembres rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</NombreDesMembres>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Jileni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Jileni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Gardien"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</Age>
+        <Cin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32321456</Cin>
+        <Email>jileni@esprit.tn</Email>
+        <NomComplet>Jileni abdeslem</NomComplet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Libertad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Libertad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Club"/>
+        <Domaine>Music</Domaine>
+        <Nom>Libertad</Nom>
+        <NombreDesMembres rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</NombreDesMembres>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Maha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Maha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Professeur"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</Age>
+        <Cin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12345678</Cin>
+        <Email>Maha@esprit.tn</Email>
+        <NomComplet>Maha Mallek</NomComplet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Mohamed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Mohamed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</Age>
+        <Email>Mohamed@esprit.tn</Email>
+        <NomComplet>Mohamed Nalouti</NomComplet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Wael -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Wael">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Etudiant"/>
+        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</Age>
+        <Cin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">099463321</Cin>
+        <Email>Wael@esprit.tn</Email>
+        <NomComplet>Wael Amri</NomComplet>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#5DS5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#5DS5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+        <Nom>5DS5</Nom>
+        <NombreDesEtudiants rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</NombreDesEtudiants>
+        <Specialite>Data Science</Specialite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#5NIDS4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#5NIDS4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+        <Nom>5NIDS4</Nom>
+        <NombreDesEtudiants rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</NombreDesEtudiants>
+        <Specialite>Securite</Specialite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#5TWIN3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#5TWIN3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Classe"/>
+        <Nom>5TWIN3</Nom>
+        <NombreDesEtudiants rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</NombreDesEtudiants>
+        <Specialite>technologie de web et de l&apos;internet</Specialite>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

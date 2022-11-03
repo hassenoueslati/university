@@ -21,4 +21,17 @@ export class BatimentComponent implements OnInit {
     })
   }
 
+  getAllBatimentTri()
+  {
+    this.batimentService.getAllBatimentTri().subscribe((data:any)=>{
+      this.ListBatiment =data.results.bindings
+    })
+  }
+  getAllBatimentTriByNom()
+  {
+    this.batimentService.getAllBatimentTriByNom().subscribe((data:any)=>{
+      this.ListBatiment =data.results.bindings
+    })
+  }
+
 }

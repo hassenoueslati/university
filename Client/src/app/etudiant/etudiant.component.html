@@ -13,10 +13,9 @@
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" (click)="getAllEtudiantsOrderedByAge()" href="javascript:void(0);">Age</a></li>
           <li><a class="dropdown-item" (click)="getAllEtudiantsOrderedByName()" href="javascript:void(0);">Name</a></li>
-          <li><a class="dropdown-item" href="javascript:void(0);">Something else here</a></li>
           <li>
           </li>
-          
+
         </ul>
       </div>
     </div>
@@ -28,7 +27,7 @@
           <th>Email</th>
           <th>Cin</th>
           <th>Age</th>
-         
+
         </tr>
         </thead>
         <tbody class="table-border-bottom-0" *ngFor="let etudiant of ListEtudiants">
@@ -45,4 +44,3 @@
       </table>
     </div>
   </div>
-  

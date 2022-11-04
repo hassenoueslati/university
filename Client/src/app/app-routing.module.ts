@@ -8,7 +8,7 @@ import {ClubComponent} from "./club/club.component";
 import {DashboardComponent} from "./dashboard/dashboard.component";
 
 const routes: Routes = [
-  { path: '',component: DashboardComponent},
+  { path: 'home',component: DashboardComponent},
   { path: 'batiment',component: BatimentComponent},
   { path: 'classe',component: ClasseComponent},
   { path: 'etudiant',component: EtudiantComponent},

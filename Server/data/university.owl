@@ -457,18 +457,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Badiaa -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Badiaa">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Professeur"/>
-        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</Age>
-        <Cin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12364646</Cin>
-        <Email>badiaa@esprit.tn</Email>
-        <NomComplet>Badiaa bouhdid</NomComplet>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#C -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#C">
@@ -544,18 +532,6 @@
         <Domaine>Music</Domaine>
         <Nom>Libertad</Nom>
         <NombreDesMembres rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</NombreDesMembres>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Maha -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Maha">
-        <rdf:type rdf:resource="http://www.semanticweb.org/hassen/ontologies/2022/10/untitled-ontology-15#Professeur"/>
-        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</Age>
-        <Cin rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12345678</Cin>
-        <Email>Maha@esprit.tn</Email>
-        <NomComplet>Maha Mallek</NomComplet>
     </owl:NamedIndividual>
     
 
